@@ -298,7 +298,15 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0730;
+				TargetAttributes = {
+					B5E29186104B7F30007BAE9C = {
+						DevelopmentTeam = W5BHZ9R8A3;
+					};
+					B5E291A7104B7F31007BAE9C = {
+						DevelopmentTeam = W5BHZ9R8A3;
+					};
+				};
 			};
 			buildConfigurationList = B5E29139104B79F4007BAE9C /* Build configuration list for PBXProject "LockTight" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -412,9 +420,7 @@
 		B5E29131104B79F4007BAE9C /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				CODE_SIGN_IDENTITY = "Developer ID Application: Ian Atha";
-				GCC_ENABLE_OBJC_GC = supported;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Deployment;
@@ -422,9 +428,7 @@
 		B5E29132104B79F4007BAE9C /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				CODE_SIGN_IDENTITY = "Developer ID Application: Ian Atha";
-				GCC_ENABLE_OBJC_GC = supported;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Default;
@@ -432,7 +436,9 @@
 		B5E291A3104B7F30007BAE9C /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
@@ -443,6 +449,7 @@
 					"-twolevel_namespace",
 				);
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.thatha.LockTight;
 				PRODUCT_NAME = LockTight;
 				PROVISIONING_PROFILE = "";
 				SECTORDER_FLAGS = "";
@@ -459,7 +466,9 @@
 		B5E291A4104B7F30007BAE9C /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = Pref/Info.plist;
@@ -469,6 +478,7 @@
 					"-twolevel_namespace",
 				);
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.thatha.LockTight;
 				PRODUCT_NAME = LockTight;
 				PROVISIONING_PROFILE = "";
 				SECTORDER_FLAGS = "";
@@ -484,9 +494,11 @@
 		B5E291BF104B7F31007BAE9C /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
-				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
@@ -496,7 +508,9 @@
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ragingmenace.SleepTightAgent;
 				PRODUCT_NAME = SleepTightAgent;
+				PROVISIONING_PROFILE = "";
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -511,8 +525,10 @@
 		B5E291C0104B7F31007BAE9C /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
-				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
@@ -522,7 +538,9 @@
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ragingmenace.SleepTightAgent;
 				PRODUCT_NAME = SleepTightAgent;
+				PROVISIONING_PROFILE = "";
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",

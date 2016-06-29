@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>LockTight</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.github.thatha.LockTight</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -18,13 +18,13 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1.2.1</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>© 2012 - Ian W. Atha, Ben Haylock, Menno Pieters, Alex Harper.</string>
 	<key>NSMainNibFile</key>
 	<string>PreferencePane</string>
 	<key>NSPrefPaneIconFile</key>
 	<string>lock.tiff</string>
 	<key>NSPrincipalClass</key>
 	<string>SleepTightPref</string>
-	<key>NSHumanReadableCopyright</key>
-	<string>© 2012 - Ian W. Atha, Ben Haylock, Menno Pieters, Alex Harper.</string>
 </dict>
 </plist>
