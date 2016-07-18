@@ -1,7 +1,9 @@
 locktight
 =========
 
-Lock your Mac with a keyboard shortcut
+Lock your Mac with a keyboard shortcut.
+
+Caveat: Mac OS X 10.11 can lock the screen with Ctrl-Shift-Power, so this is probably not necessary going forward.
 
 ## Troubleshooting
 - when locking, if the screen dims and then the desktop reappears (vs locking):
